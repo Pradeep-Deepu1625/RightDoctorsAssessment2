@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit A Person</title>
+</head>
+<body>
+    <h1>Edit Person</h1>
+    <form action="/people/edit/<%= filterPerson._id %>" method="post">
+        <label>Name:</label>
+            <input type="text" name="Name" value="<%= filterPerson.Name %>"/><br>
+            <label>Age:</label>
+            <input type="text" name="Age" value="<%= filterPerson.Age %>"/><br>
+            <label>Gender:</label>
+            <input type="text" name="Gender" value="<%= filterPerson.Gender %>"/><br>
+            <label>Mobile:</label>
+            <input type="text" name="Mobile" value="<%= filterPerson.Mobile %>"/><br>
+        <button onclick="submit">Update</button>
+        <a href="/people">Cancle</a>
+    </form>
+</body>
+</html>

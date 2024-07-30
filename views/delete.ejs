@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Person</title>
+</head>
+<body>
+    <h1>Delete Person</h1>
+    <p>Are You Sure you want to delete <%= filterPerson.Name %>...?</p>
+    <form action="/people/delete/<%= filterPerson._id %>" method="post">
+        <button type="submit">Delete</button>
+        <a href="/people">Cancle</a>
+    </form>
+</body>
+</html>
